@@ -20,7 +20,7 @@ USER jovyan
 
 # RUN conda install -y scikit-learn
 
-RUN pip install --no-cache-dir networkx scipy
+RUN pip install --no-cache-dir networkx scipy scikit-learn
 
 USER root
 RUN mamba install -c conda-forge r-survey -y && \
